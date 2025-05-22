@@ -54,7 +54,7 @@ export default function Navbar() {
           <img
             src={GreenacyWhiteLogo}
             alt="Greenacy logo"
-            className="h-8 w-auto md:h-6"
+            className="h-8 w-30 sm:w-auto md:w-auto md:h-6"
           />
         </Link>
 
@@ -140,7 +140,7 @@ export default function Navbar() {
           <img
             src={GreenacyWhiteLogo}
             alt="Greenacy logo"
-            className="h-8 w-auto md:h-6"
+            className="h-8 w-30 sm:w-auto md:w-auto md:h-6"
           />
         </Link>
             <button

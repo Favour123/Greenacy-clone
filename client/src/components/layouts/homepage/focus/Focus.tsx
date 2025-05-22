@@ -14,8 +14,11 @@ export default function Focus() {
          </div>
          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3  justify-center gap-2">
             <div className="relative z-10 grid grid-cols-1 pb-2  gap-8 max-w-5xl mx-auto">
-               {focusDataRight.map((item, idx) => (
-                  <div key={item.title} className="flex flex-col md:flex-row  bg-[#199C38]/80 rounded-[30px]  md:rounded-[30px_300px_300px_300px]  border-[#ECECEC] border-solid border-3 p-6 gap-6 shadow-lg hover:scale-[1.02] transition">
+               {focusDataRight.map((item) => (
+                  <div
+                     key={item.title}
+                     className="flex flex-col md:flex-row  bg-[#199C38]/80 rounded-[30px]  md:rounded-[30px_300px_300px_300px]  border-[#ECECEC] border-solid border-3 p-6 gap-6 shadow-lg hover:scale-[1.02] transition"
+                  >
                      <div className="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-green-200">
                         <img src={item.icon} alt={item.title + " icon"} className="w-10 h-10 object-contain" />
                      </div>
@@ -31,9 +34,12 @@ export default function Focus() {
                <img src={Iconblog} alt="Greenacy Globe Icon" className="w-40 h-40 sm:w-50 sm:h-50 md:w-65 md:h-60 rounded-full shadow-lg bg-white/80 p-4 border-8 border-green-200" />
             </div>
             <div className="relative z-10 grid grid-cols-1  gap-8 max-w-5xl  mx-auto">
-               {focusDataLeft.map((item, idx) => (
-                  <div key={item.title} className="flex flex-col md:flex-row items-center bg-[#199C38]/80 rounded-[30px] md:rounded-[300px_30px_300px_300px] border border-[#ECECEC] border-solid border-3  p-6 gap-6 shadow-lg hover:scale-[1.02] transition">
-                    <div className=" flex-shrink-0 md:hidden w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-green-200">
+               {focusDataLeft.map((item) => (
+                  <div
+                     key={item.title}
+                     className="flex flex-col md:flex-row items-center bg-[#199C38]/80 rounded-[30px] md:rounded-[300px_30px_300px_300px]  border-[#ECECEC] border-solid border-3  p-6 gap-6 shadow-lg hover:scale-[1.02] transition"
+                  >
+                     <div className=" flex-shrink-0 md:hidden w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-green-200">
                         <img src={item.icon} alt={item.title + " icon"} className="w-10 h-10 object-contain" />
                      </div>
                      <div className="text-center md:text-left ">
