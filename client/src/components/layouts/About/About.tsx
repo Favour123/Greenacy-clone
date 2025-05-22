@@ -10,7 +10,7 @@ import {
   type VisionItem,
   type ServiceItem,
   type Testimonial
-} from '../../data/about';
+} from '../../data/About';
 import { Background1 } from '../../../assets/images';
 
 const iconMap = {
