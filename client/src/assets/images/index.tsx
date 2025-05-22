@@ -31,7 +31,7 @@ export {default as Person3} from "./photo-3-1536x1024.jpg";
 export {default as Person5} from "./photo-7-1536x1024.jpg";
 export {default as Person4} from "./photo-1-1.jpg";
 export {default as Background1} from "./background.jpg";
-export {default as Closed} from "./Greenacy-closed.png";
+export {default as Closed} from "./GreenacyClosed.png";
 export {default as Blog1 } from "./Greenacy-2937-768x512.jpeg";
 export {default as Blog2} from "./Greenacy-3403.jpg";
 export {default as Blog3} from "./Greenacy-3836.webp";
