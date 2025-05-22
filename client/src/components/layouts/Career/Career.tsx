@@ -149,9 +149,9 @@ const Career: React.FC = () => {
                <JobDetail icon={<DollarIcon />} title="Monthly Pay" value={monthlyPay} />
             </div>
          </div>
-         {/* Display the Closed sign if needed */}
-         {Closed && (
-            <div className="mt-6 ">
+         {/* Display the Closed sign if image is available */}
+         {typeof Closed === 'string' && (
+            <div className="mt-6">
                <img src={Closed} alt="Closed Sign" className="w-55 h-26 filter hue-rotate-90" loading="lazy" />
             </div>
          )}

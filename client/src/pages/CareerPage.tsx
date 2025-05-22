@@ -18,9 +18,11 @@ export default function CareerPage() {
             <div className="relative z-10 w-full flex flex-col items-center">
                <div className="max-w-2xl mx-auto text-center mb-8 mt-5">
                   {/* This filter changes red to green */}
-                  <div className="w-full h-full text-center flex flex-row justify-center">
-                     <img src={Closed} alt="Closed Sign" className="w-55 h-26 filter hue-rotate-90" loading="lazy" />
-                  </div>
+                  {typeof Closed === 'string' && (
+                     <div className="w-full h-full text-center flex flex-row justify-center">
+                        <img src={Closed} alt="Closed Sign" className="w-55 h-26 filter hue-rotate-90" loading="lazy" />
+                     </div>
+                  )}
                   <h2 className="text-white text-3xl md:text-5xl font-bold mb-2">
                      Client Success <br /> Application Over
                   </h2>
