@@ -41,5 +41,11 @@ export {default as Logo2} from "./logo-2.png";
 export {default as Logo3} from "./logo-3.png";
 export {default as Logo4} from "./logo-4.png";
 export {default as Logo5} from "./logo-5.png";
+export {default as Team1} from "./Greenacy-Team-460.png";
+export {default as Team2} from "./Greenacy-Team-707.png";
+export {default as Team3} from "./Greenacy-Team-975.png";
+export {default as Vision1} from "./team-of-young-successful-designers-gathered-by-wor-2023-11-27-04-57-08-utc_result-768x512.webp";
+export {default as Vision2} from "./photo-5-768x512.jpg";
+export {default as Vision3} from "./Greenacy-3283-768x480.jpg";
 
 

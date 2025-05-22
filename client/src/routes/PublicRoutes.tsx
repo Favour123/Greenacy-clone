@@ -8,6 +8,7 @@ import CareerPage from "../pages/CareerPage";
 import Policy from "../pages/Policy";
 import Blogs from '../pages/Blogs';
 import Blogpage from '../components/layouts/Blog/Blogpage';
+import AboutPage from "../pages/AboutPage";
 
 function PublicRoutes() {
   return (
@@ -16,7 +17,7 @@ function PublicRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/events" element={<Event />} />
-        {/* <Route path="/academics/:universityId" element={<Resources />} /> */}
+        <Route path="/about" element={<AboutPage/>} />
         <Route path="/careers" element={<CareerPage />} />
         <Route path="/privacy-policy" element={<Policy />} />
         <Route path="/blogs" element={<Blogs />} />

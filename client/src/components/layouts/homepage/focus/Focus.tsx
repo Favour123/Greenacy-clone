@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { focusDataRight, focusDataLeft } from "../../../data/Focus";
 import { Iconblog, Backgroud } from "../../../../assets/images";
 
@@ -15,7 +15,7 @@ export default function Focus() {
          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3  justify-center gap-2">
             <div className="relative z-10 grid grid-cols-1 pb-2  gap-8 max-w-5xl mx-auto">
                {focusDataRight.map((item, idx) => (
-                  <div key={item.title} className="flex flex-col md:flex-row  bg-[#199C38]/80 rounded-[30px]  md:rounded-[30px_300px_300px_300px] border border-[#ECECEC] border-solid border-3 p-6 gap-6 shadow-lg hover:scale-[1.02] transition">
+                  <div key={item.title} className="flex flex-col md:flex-row  bg-[#199C38]/80 rounded-[30px]  md:rounded-[30px_300px_300px_300px]  border-[#ECECEC] border-solid border-3 p-6 gap-6 shadow-lg hover:scale-[1.02] transition">
                      <div className="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-green-200">
                         <img src={item.icon} alt={item.title + " icon"} className="w-10 h-10 object-contain" />
                      </div>
@@ -40,7 +40,7 @@ export default function Focus() {
                         <h4 className="text-green-100 text-lg font-bold mb-1">{item.title}</h4>
                         <p className="text-green-50 text-sm leading-relaxed">{item.description}</p>
                      </div>
-                     <div className="hidden md:flex flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-green-200">
+                     <div className="hidden md:flex flex-shrink-0 w-16 h-16 bg-white rounded-full  items-center justify-center border-4 border-green-200">
                         <img src={item.icon} alt={item.title + " icon"} className="w-10 h-10 object-contain" />
                      </div>
                   </div>
