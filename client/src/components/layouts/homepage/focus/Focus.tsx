@@ -1,4 +1,3 @@
-// import React from "react";
 import { focusDataRight, focusDataLeft } from "../../../data/Focus";
 import { Iconblog, Backgroud } from "../../../../assets/images";
 

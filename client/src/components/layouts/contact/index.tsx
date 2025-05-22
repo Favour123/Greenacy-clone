@@ -1,4 +1,3 @@
-import React from "react";
 import { Mail } from "lucide-react";
 import { LinkedinLogo, InstagramLogo } from "phosphor-react";
 import { Background1, Person1, Person3, Person4, Person5, Person2 } from "../../../assets/images";

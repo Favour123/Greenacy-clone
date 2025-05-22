@@ -1,4 +1,3 @@
-import React from "react";
 import { events } from "../../../data/event";
 import { ArrowUpRight,Clock } from "phosphor-react";
 import {CalendarDays,MapPin } from "lucide-react"

@@ -1,5 +1,4 @@
 // components/About.tsx
-import React from 'react';
 import { Target, Building2, Users, Lightbulb, Briefcase, Calendar } from 'lucide-react';
 import { 
   missionData, 
