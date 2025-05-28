@@ -37,7 +37,7 @@ export default function ContactPage() {
                </p>
             </div>
             {/* Contact Methods */}
-            <div className="flex flex-col md:flex-row gap-4 justify-center mb-8 w-full max-w-3xl">
+            <div className="flex flex-col px-1 md:px-0 md:flex-row gap-4 justify-center mb-8 w-full max-w-3xl">
                <div className="flex-1 min-w-[220px] bg-green-50 border border-green-500 rounded-lg p-4 flex flex-row items-center gap-4 shadow-sm">
                   <div className="bg-green-600 rounded-md p-2 mb-2">
                      <Mail className="text-white" size={23} />
@@ -67,7 +67,7 @@ export default function ContactPage() {
                </div>
             </div>
             {/* Contact Form */}
-            <form className="w-full max-w-3xl flex flex-col gap-4 items-center">
+            <form className="w-full max-w-3xl px-1 md:px-0 flex flex-col gap-4 items-center">
                <div className="flex flex-col md:flex-row gap-4 w-full">
                   <div className="flex-1 flex flex-col">
                      <label htmlFor="name" className="text-green-900 font-semibold mb-1 text-left">
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   SUBMIT
                </button>
             </form>
-            <section className="w-full">
+            <section className="w-full px-1 md:px-0">
                {/* Image Gallery */}
                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 ms-1 pt-8 gap-4">
                   {imageList.map((src, index) => (

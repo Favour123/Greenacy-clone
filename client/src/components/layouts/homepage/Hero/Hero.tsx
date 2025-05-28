@@ -146,7 +146,7 @@ const Hero: React.FC<HeroProps> = ({
          {/* Company Logos Section */}
          <section className="bg-white ">
             <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
-               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 items-center">
                   {companyLogos.map((logo) => (
                      <div key={logo.id} className=" space-y-2 group">
                         <div className="flex items-center space-x-3  0">
