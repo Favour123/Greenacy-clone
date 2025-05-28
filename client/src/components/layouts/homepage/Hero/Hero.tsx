@@ -87,7 +87,6 @@ const flipWords = [
 
 const Hero: React.FC<HeroProps> = ({
    title = "Planting Seeds of Change Through ",
-   span = "Climate Education",
    subtitle = "We're raising a generation that understands, protects, and restores the planet by spreading the message of sustainability, one heart at a time.",
    ctaText = "Be The Change",
    onCtaClick,
