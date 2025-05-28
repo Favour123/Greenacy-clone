@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { Play, Instagram, Linkedin, Mail } from 'lucide-react';
 import { InstagramLogo, LinkedinLogo, EnvelopeSimpleOpen, PlayCircle } from "phosphor-react";
 import { HeroBg, Logo1, Logo2, Logo3, Logo4, Logo5 } from "../../../../assets/images";
@@ -77,6 +77,14 @@ const defaultSocialLinks: SocialLink[] = [
    },
 ];
 
+// Add this before the Hero component
+const flipWords = [
+   "Climate Education",
+   "Sustainable Future",
+   "Green Innovation",
+   "Environmental Care"
+];
+
 const Hero: React.FC<HeroProps> = ({
    title = "Planting Seeds of Change Through ",
    span = "Climate Education",
@@ -89,6 +97,21 @@ const Hero: React.FC<HeroProps> = ({
    socialLinks = defaultSocialLinks,
    className = "",
 }) => {
+   const [currentWordIndex, setCurrentWordIndex] = useState(0);
+   const [isFlipping, setIsFlipping] = useState(false);
+
+   useEffect(() => {
+      const intervalId = setInterval(() => {
+         setIsFlipping(true);
+         setTimeout(() => {
+            setCurrentWordIndex((prev) => (prev + 1) % flipWords.length);
+            setIsFlipping(false);
+         }, 150);
+      }, 3000);
+
+      return () => clearInterval(intervalId);
+   }, []);
+
    return (
       <div className={`relative min-h-40 md:min-h-screen ${className}`}>
          {/* Hero Section */}
@@ -117,7 +140,12 @@ const Hero: React.FC<HeroProps> = ({
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
                   {/* Left Content */}
                   <div className="text-white space-y-6 sm:space-y-8">
-                     <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-tight lg:leading-tight">{title} <span>{span}</span></h1>
+                     <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-tight lg:leading-tight">
+                        {title} 
+                        <span className={`inline-block transition-all duration-150 ${isFlipping ? 'opacity-0 transform -translate-y-2' : 'opacity-100 transform translate-y-0'}`}>
+                           {flipWords[currentWordIndex]}
+                        </span>
+                     </h1>
 
                      <p className="text-base sm:text-lg md:text-xl leading-relaxed opacity-90 max-w-[-50%]">{subtitle}</p>
 
