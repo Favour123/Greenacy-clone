@@ -44,7 +44,7 @@ export default function Footer() {
 
             <div className="max-w-[1200px] w-full mx-auto py-12 px-4 flex flex-col md:flex-row gap-8 justify-center md:justify-between items-center md:items-start text-center md:text-left relative z-10">
                {/* Left: Logo & Description */}
-               <div className="flex-1 min-w-[220px] flex flex-col gap-6 items-center md:items-start">
+               <div className="flex-1 min-w-[280px] flex flex-col gap-2 sm:gap-2 md:gap-6 items-center md:items-start">
                   <img src={GreenacyWhiteLogo} alt="Greenacy logo" width={150} height={40} className="mb-2" />
                   <p className="text-white text-base max-w-xs">Promoting a greener future by providing innovative education initiatives that promote sustainability.</p>
                   <div className="flex items-center justify-center md:justify-start gap-3 mt-2">
@@ -93,8 +93,10 @@ export default function Footer() {
 
                {/* Right: Subscribe */}
                <div className="flex-1 min-w-[260px] flex flex-col items-center md:items-start">
-                  <h4 id="subscribe" className="text-white font-bold mb-4">SUBSCRIBE</h4>
-                  <form className="flex flex-col sm:flex-col md:flex-row gap-3 w-full max-w-xs">
+                  <h4 id="subscribe" className="text-white font-bold mb-4">
+                     SUBSCRIBE
+                  </h4>
+                  <form className="flex flex-col sm:flex-col md:flex-row gap-1 md:gap-3 w-full ">
                      <input type="email" placeholder="Email" className="rounded-md px-4 py-2 bg-white text-black focus:outline-none" />
                      <button type="submit" className="bg-[#A6FF9E] text-black font-semibold rounded-md py-2 px-3 transition hover:bg-[#8be88a]">
                         SUBMIT

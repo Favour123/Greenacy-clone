@@ -93,13 +93,13 @@ const Hero: React.FC<HeroProps> = ({
       <div className={`relative min-h-40 md:min-h-screen ${className}`}>
          {/* Hero Section */}
          <section
-            className="relative min-h-40 md:min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat rounded  md:rounded-[0px_0px_200px_0px] "
+            className="relative min-h-40 md:min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat  md:rounded-[0px_0px_200px_0px] "
             style={{
                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})`,
             }}
          >
             {/* Social Media Icons - Right Side */}
-            <div className="absolute right-6 top-1/2 transform -translate-y-1/2 flex flex-col gap-4 z-10">
+            <div className="absolute right-3 top-1/2 transform -translate-y-1/2 flex flex-col gap-4 z-10">
                {socialLinks.map((social, index) => (
                   <a
                      key={index}
@@ -113,29 +113,29 @@ const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Main Hero Content */}
-            <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
-               <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 md:gap-12 items-center">
+            <div className="container mx-auto px-3 sm:px-6 lg:px-8 max-w-6xl py-6 sm:py-12 lg:py-16">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
                   {/* Left Content */}
-                  <div className="text-white space-y-8">
-                     <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight">{title} <span>{span}</span></h1>
+                  <div className="text-white space-y-6 sm:space-y-8">
+                     <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-tight lg:leading-tight">{title} <span>{span}</span></h1>
 
-                     <p className="text-lg md:text-xl leading-relaxed opacity-90 max-w-2xl">{subtitle}</p>
+                     <p className="text-base sm:text-lg md:text-xl leading-relaxed opacity-90 max-w-[-50%]">{subtitle}</p>
 
                      {/* CTA Buttons */}
-                     <div className="flex flex-wrap gap-4 items-center">
+                     <div className="flex gap-4 sm:gap-6 items-center pt-4 sm:pt-6">
                         <button
                            onClick={onCtaClick}
-                           className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-green-800 transition-all duration-300 transform hover:scale-105"
+                           className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-green-800 transition-all duration-300 transform hover:scale-105"
                         >
                            {ctaText}
                         </button>
 
                         <button
                            onClick={onPlayClick}
-                           className="w-12 h-12  bg-opacity-20 backdrop-blur-sm border border-white border-opacity-30 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                           className="w-12 h-12 bg-opacity-20 backdrop-blur-sm border border-white border-opacity-30 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
                            aria-label="Play video"
                         >
-                           <PlayCircle size={24}  />
+                           <PlayCircle size={24} />
                         </button>
                      </div>
                   </div>

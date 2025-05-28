@@ -7,7 +7,7 @@ export interface Blog {
   content: string;
 }
 
-import { Blog1, Blog2, Blog3 } from '../../assets/images';
+import { Blog1, Blog2, Blog3, Blog4, Blog5, Blog6 } from '../../assets/images';
 
 export const blogs: Blog[] = [
   {
@@ -31,6 +31,30 @@ export const blogs: Blog[] = [
     title: 'How to Use Games and Activities to Make Sustainability Fun for Kids',
     image: Blog3,
     date: '08 Dec',
+    excerpt: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't...`,
+    content: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't have to be boring!\n\n1. Turn lessons into games.\n2. Use outdoor activities to connect with nature.\n3. Make recycling a team challenge.\n4. Create art from upcycled materials.\n5. Celebrate eco-friendly wins.\n\nWhen kids have fun, they learn more—and they're more likely to carry those lessons into adulthood. Let's make sustainability a game everyone wants to play!`
+  },
+  {
+    id: 4,
+    title: 'How to Use Games and Activities to Make Sustainability Fun for Kids',
+    image: Blog4,
+    date: '08 Sept',
+    excerpt: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't...`,
+    content: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't have to be boring!\n\n1. Turn lessons into games.\n2. Use outdoor activities to connect with nature.\n3. Make recycling a team challenge.\n4. Create art from upcycled materials.\n5. Celebrate eco-friendly wins.\n\nWhen kids have fun, they learn more—and they're more likely to carry those lessons into adulthood. Let's make sustainability a game everyone wants to play!`
+  },
+  {
+    id: 5,
+    title: 'How to Use Games and Activities to Make Sustainability Fun for Kids',
+    image: Blog5,
+    date: '08 Aug',
+    excerpt: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't...`,
+    content: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't have to be boring!\n\n1. Turn lessons into games.\n2. Use outdoor activities to connect with nature.\n3. Make recycling a team challenge.\n4. Create art from upcycled materials.\n5. Celebrate eco-friendly wins.\n\nWhen kids have fun, they learn more—and they're more likely to carry those lessons into adulthood. Let's make sustainability a game everyone wants to play!`
+  },
+  {
+    id: 6,
+    title: 'How to Use Games and Activities to Make Sustainability Fun for Kids',
+    image: Blog6,
+    date: '08 Jan',
     excerpt: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't...`,
     content: `Let's be honest: teaching kids about sustainability can feel like a chore. Words like "carbon footprint" and "waste management" don't exactly scream fun. But here's the good news, it doesn't have to be boring!\n\n1. Turn lessons into games.\n2. Use outdoor activities to connect with nature.\n3. Make recycling a team challenge.\n4. Create art from upcycled materials.\n5. Celebrate eco-friendly wins.\n\nWhen kids have fun, they learn more—and they're more likely to carry those lessons into adulthood. Let's make sustainability a game everyone wants to play!`
   }

@@ -29,12 +29,12 @@ export default function Counter() {
                <motion.h1
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ type: "spring", duration: 0.7 }}
-                  className="text-4xl sm:text-4xl md:text-5xl font-bold text-[#178A50] leading-tight"
+                  transition={{ type: "spring", duration: 1 }}
+                  className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#178A50] leading-tight"
                >
                   Building a climate-conscious world through informed action
                </motion.h1>
-               <p className="text-gray-700 text-lg">
+               <p className="text-gray-700 text-sm md:text-lg">
                   Greenacy is a grassroots climate action movement focused on environmental education and community awareness. We work with schools, workplaces, and communities across developing
                   countries to promote practical climate knowledge and inspire local action. Our work is built on a simple idea: when people understand the challenges facing our planet, they are
                   better equipped to become part of the solution. We focus on real-world education, meaningful engagement, and community-driven programs that help people connect environmental issues

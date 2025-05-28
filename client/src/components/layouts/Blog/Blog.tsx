@@ -16,7 +16,7 @@ const Blog: React.FC = () => {
     <div className="flex flex-col w-full items-center min-h-screen bg-white">
 
       <div className="flex flex-row w-full gap-8 mt-12 mb-8 flex-wrap justify-center px-3 md:px-0 ">
-        {blogs.map((blog) => (
+        {blogs.slice(0, 3).map((blog) => (
           <div
             key={blog.id}
             className="bg-green-50 rounded-xl shadow-md w-full md:w-80 flex flex-col items-center pb-6 "
